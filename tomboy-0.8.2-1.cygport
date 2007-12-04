@@ -1,0 +1,4 @@
+inherit gnome2 mono
+
+DESCRIPTION="GNOME desktop note-taking app"
+HOMEPAGE="http://www.gnome.org/projects/tomboy/"
