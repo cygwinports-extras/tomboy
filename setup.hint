@@ -1,0 +1,6 @@
+category: Gnome
+requires: cygwin glib2 gnome-panel gtk2-x11 gtkspell libX11_6 libgalago-gtk libgnomeprint22 libgnomeprintui22 libintl8 pango mono galago-sharp gconf-sharp2 glib-sharp2 gmime-sharp gnome-sharp2 gtk-sharp2 ndesk-dbus-sharp ndesk-dbus-glib-sharp
+sdesc: "GNOME desktop notes organizer"
+ldesc: "Tomboy is a desktop note-taking application for the GNOME 
+desktop. Simple and easy to use, but with potential to help you organize 
+the ideas and information you deal with every day."
