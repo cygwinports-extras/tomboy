@@ -1,0 +1,26 @@
+--- origsrc/tomboy-1.0.1/Tomboy/Tomboy.exe.config.in	2009-04-27 12:29:09.000000000 -0500
++++ src/tomboy-1.0.1/Tomboy/Tomboy.exe.config.in	2009-12-09 02:47:20.500647200 -0600
+@@ -1,7 +1,7 @@
+ <configuration>
+-  <dllmap dll="libglib-2.0-0.dll" target="libglib-2.0.so.0"/>
+-  <dllmap dll="libgtk-win32-2.0-0.dll" target="libgtk-x11-2.0.so.0"/>	
+-  <dllmap dll="libgtkspell" target="libgtkspell.so.0"/>
+-  <dllmap dll="libtomboy" target="libtomboy.so"/>
+-  <dllmap dll="panel-applet-2" target="libpanel-applet-2.so.0"/>
++  <dllmap dll="libglib-2.0-0.dll" target="cygglib-2.0-0.dll"/>
++  <dllmap dll="libgtk-win32-2.0-0.dll" target="cyggtk-x11-2.0-0.dll"/>	
++  <dllmap dll="libgtkspell" target="cyggtkspell-0.dll"/>
++  <dllmap dll="libtomboy" target="cygtomboy.dll"/>
++  <dllmap dll="panel-applet-2" target="cygpanel-applet-2-0.dll"/>
+ </configuration>
+--- origsrc/tomboy-1.0.1/libtomboy/Makefile.am	2009-04-27 12:29:12.000000000 -0500
++++ src/tomboy-1.0.1/libtomboy/Makefile.am	2009-12-09 02:45:38.086468600 -0600
+@@ -20,7 +20,7 @@ libtomboy_la_SOURCES =		\
+ 	eggaccelerators.c
+ 
+ libtomboy_la_CFLAGS = $(X_CFLAGS)
+-libtomboy_la_LDFLAGS = -export-dynamic -module -avoid-version
++libtomboy_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
+ libtomboy_la_LIBADD = $(LIBTOMBOY_LIBS) $(X_LIBS)
+ 
+ maintainer-clean-local:
