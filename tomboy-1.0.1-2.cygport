@@ -3,4 +3,9 @@ inherit mono gnome2
 DESCRIPTION="GNOME desktop note-taking app"
 HOMEPAGE="http://www.gnome.org/projects/tomboy/"
 
-PATCH_URI="1.0.1-dllmap-cygwin.patch"
+PATCH_URI="
+	1.0.1-dllmap-cygwin.patch
+	1.0.1-no-panel-applet.patch
+"
+
+DEPS_PATH="/usr/lib/tomboy"
