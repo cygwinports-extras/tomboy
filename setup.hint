@@ -1,5 +1,5 @@
 category: Gnome
-requires: libglib2.0_0 libgtk2.0_0 libgtkspell0 libX11_6 mono-gconf-sharp2.0 mono-gconf-sharp-peditors2.0 mono-glib-sharp2.0 mono-gmime-sharp2.4 mono-gnome-sharp2.24 mono-gtk-sharp2.0 mono-Mono-Addins0.2 mono-NDesk-DBus1.0 mono-NDesk-DBus-GLib1.0 mono-pango-sharp2.0
+requires: libglib2.0_0 libgtk2.0_0 libgtkspell0 libX11_6 mono-dbus-sharp1.0 mono-dbus-sharp-glib1.0 mono-gconf-sharp2.0 mono-glib-sharp2.0 mono-gmime-sharp2.4 mono-gtk-sharp2.0 mono-Mono-Addins0.2 mono-pango-sharp2.0
 sdesc: "GNOME desktop notes organizer"
 ldesc: "Tomboy is a desktop note-taking application for the GNOME 
 desktop. Simple and easy to use, but with potential to help you organize 
